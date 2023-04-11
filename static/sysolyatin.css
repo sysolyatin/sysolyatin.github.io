@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Ggg';
+    src: url('ggg.ttf') format('truetype'); 
+}
+body {
+	font-family: Ggg, "Times New Roman", Times, serif;
+	font-size: 20px;
+	line-height: 1.6;
+	background: url('bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+blockquote {
+	background: #fff5d1;
+	border-radius: 10px;
+	padding: 10px;
+}
+img {
+	max-width: 100%;
+}
+a {
+    color: #0a53be;
+}
+a:hover {
+    color: #d04000;
+}
+
+h3 {
+	background: #ffd51d;
+	border-radius: 8px;
+	padding: 6px;
+	font-size: 20px;
+}
+
+ol {
+	list-style-type: none; 
+	counter-reset: num;
+	margin: 0 0 0 45px;
+	padding: 15px 0 5px 0;
+}
+ol li {
+	position: relative;	
+	margin: 0 0 0 0;
+	padding: 0 0 10px 0;
+	line-height: 1.4;
+}
+ol li:before {
+	content: counter(num); 
+	counter-increment: num;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: -38px;
+	width: 28px;
+	height: 28px;
+	background: #fff;
+	color: #000;
+	text-align: center;
+	line-height: 28px;
+	font-size: 18px;
+	border-radius: 50%;
+	border: 1px solid #ffd51d;
+}
+
+ul li {
+	list-style-type: none;
+}
+ul li::before {
+	color: #ffd51d;
+	content: "›";
+	padding-right: 10px;
+}
+
+.main-menu a {
+	text-decoration: none;
+	border-radius: 8px;
+	background: #f2f5fa;
+	color: #000;
+	padding: 8px;
+}
+.main-menu a:hover {
+	text-decoration: none;
+	background: #ffd51d;
+}
+.sys-post-date {
+	font-size: 12px;
+	color: #888;
+	margin-top: -25px;
+}

@@ -1,0 +1,89 @@
+---
+layout: default
+---
+<div class="h-100 p-4 mb-3 rounded-3 fs-5 border">
+    <h2>Обо мне</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="/static/me.jpg" class="img-fluid rounded-3" />
+        </div>
+        <div class="col-md-6">
+            <p>
+                Художник по&nbsp;свету концертных программ, разработчик  
+                <a href="https://midigma.com/" target="_blank">MIDI&nbsp;to&nbsp;grandMA2</a>,
+                <a href="https://timecode.su/" target="_blank">конвертера меток из REAPER в 
+                таймкод</a> и других <a href="/apps">приложений и плагинов</a>,
+                создатель самого большого русскоязычного <a href="https://t.me/grandmarus" target="_blank">телеграм-сообщества</a> пользователей пультов MA Lighting.
+            </p>
+            <p>
+                Использую в работе<br>
+                <img style="padding-right: 5px;" title="grandMA2" src="/static/ma.svg" alt="grandMA2" height="50px" />
+                <img style="padding-right: 5px;" title="Capture SE" src="/static/capture.svg" alt="Capture" height="50px" />
+                <img style="padding-right: 5px;" title="Resolume" src="/static/resolume.svg" alt="Resolume" height="50px" />
+            </p>
+            <p>
+                Для&nbsp;связи по&nbsp;вопросам сотрудничества пишите на&nbsp;почту&nbsp;
+                <a href="mailto:artem@sysolyatin.com">artem@sysolyatin.com</a>
+            </p>
+        </div>
+    </div>                    
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="p-4 mb-3 border rounded-3 fs-5">
+            <h2>Заметки про свет</h2>
+            <p>
+                Пишу ответы на часто возникающие вопросы, в основном по пультам grandMA2, но бывает и просто по свету. 
+                Пишу в первую очередь для себя, но если вдруг вам что-то из этого поможет - буду рад!
+            </p>
+            <p>
+                Самые популярные заметки:
+            </p> 
+            <ul>
+                {% for post in site.posts %}
+                    {% if post.popular == true %}
+                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <a href="/light" class="btn btn-outline-dark">Показать все</a>                
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="h-100 p-4 mb-3 border rounded-3 fs-5 mb-3">
+                    <h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-terminal" viewBox="0 0 16 16">
+                            <path d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9zM3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"/>
+                            <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z"/>
+                        </svg><br><br>
+                        Приложения и плагины
+                    </h2>
+                    <br>
+                    <a href="/apps" class="btn btn-outline-dark">Показать все</a>                
+                </div>
+            </div>
+            <div class="col-md-8 mb-3">
+                <div class="h-100 p-4 mb-3 border rounded-3 fs-5 mb-3">
+                    <h2>grandMA2 для прокатных компаний</h2>
+                    <p style="text-align:justify">
+                        Мой авторский тренинг, в котором делюсь прокатным опытом работы 
+                        с пультами линейки grandMA2. Проходит в очном формате в Москве на базе 
+                        компании Завод Шоу, а так же иногда в онлайн формате.
+                    </p>
+                    <a href="https://ma-learn.ru/" class="btn btn-outline-dark">Подробнее</a>                
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-4">
+        <div class="h-100 p-4 mb-3 border rounded-3 fs-5 mb-3">
+            <h2>Отдельный чат<br>про МА</h2>
+            <a href="https://t.me/grandmarus" target="_blank">
+                <img src="/static/marus.jpg" class="img-fluid rounded-3" />  
+            </a> 
+        </div>
+    </div>
+</div>

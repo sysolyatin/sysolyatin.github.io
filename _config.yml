@@ -1,0 +1,38 @@
+title: Артем Сысолятин
+email: artem@sysolyatin.com
+description: художник по свету, видеоинженер
+permalink: /light/:title/
+navigation_links:
+  - title: главная
+    url: /
+
+  - title: заметки
+    url: /light
+
+  - title: приложения
+    url: /apps
+
+apps:
+  - name: "MIDI to grandMA2"
+    url: https://midigma.com
+    icon: /static/midigma.svg
+    text: "Удобная работа с MIDI контроллерами в пультах grandMA2"
+
+  - name: "Timecode конвертнер"
+    url: https://timecode.su
+    icon: /static/timecode-su.svg
+    text: "Конвертер меток из Reaper в таймкоды разных световых пультов"
+
+  - name: "Cue-лист инфо"
+    url: /tools/cue-info/
+    icon: /static/cue-info.svg
+    text: "Получение печатной информации о CUE-листе из grandMA2"
+
+  - name: "Blinder Tools"
+    url: /light/blinders/
+    icon: /static/blinder-tools.svg
+    text: "grandMA2-плагин для работы с китайскими блайндерами"
+
+theme: minima
+plugins:
+  - jekyll-feed
