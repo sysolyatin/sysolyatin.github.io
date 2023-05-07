@@ -32,6 +32,11 @@ apps:
     url: /light/blinders/
     icon: /static/blinder-tools.svg
     text: "grandMA2-плагин для работы с китайскими блайндерами"
+  
+  - name: "BPM tool"
+    url: /bpm
+    icon: /static/bpm.svg
+    text: "Приложение для подсчета количества ударов в минуту"
 
 theme: minima
 plugins:
