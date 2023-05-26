@@ -38,6 +38,11 @@ apps:
     icon: /static/bpm.svg
     text: "Приложение для подсчета количества ударов в минуту"
 
+  - name: "Position Layout"
+    url: /apps/position/
+    icon: /static/position.svg
+    text: "grandMA2-плагин для работы с позициями приборов в баскинге"
+
 theme: minima
 plugins:
   - jekyll-feed
