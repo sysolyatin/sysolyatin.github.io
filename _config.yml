@@ -43,6 +43,11 @@ apps:
     icon: /static/position.svg
     text: "grandMA2-плагин для работы с позициями приборов в баскинге"
 
+  - name: "DimFX"
+    url: /apps/dimfx/
+    icon: /static/dimfx.svg
+    text: "grandMA2-плагин для создания диммерных эффектов для группы"
+
 theme: minima
 plugins:
   - jekyll-feed
