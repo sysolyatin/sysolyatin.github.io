@@ -1,0 +1,31 @@
+---
+title: "Карта моих путешествий"
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page.title }}</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="/static/cropped-logo-32x32.png" sizes="32x32" />
+    <link rel="icon" href="/static/cropped-logo-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/static/cropped-logo-180x180.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="static/leaflet.css" />
+    <link rel="stylesheet" href="static/cluster.css" />
+    <link rel="stylesheet" href="static/map.css" />
+    <script src="static/leaflet.js"></script>
+    <script src="static/cluster.js"></script>
+    <script src="static/map.js" defer></script>
+</head>
+<body>
+<div id="map"></div>
+
+<div id="photo" onclick="closePhoto()">
+    <img src="static/load.gif">
+</div>
+
+{% for place in site.data.map %}
+<input type="hidden" class="place" value="" data-x="{{ place.pos_x }}" data-y="{{ place.pos_y }}" data-photo="{{ place.photo }}" data-title="{{ place.title }}"/>
+{% endfor %}
+</body>
+</html>

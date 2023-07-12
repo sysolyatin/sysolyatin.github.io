@@ -68,6 +68,11 @@ $(document).ready(function() {
             let number = "";
             try {
                 number = el.getElementsByTagName("Number")[0].getAttribute("number");
+                let subNumber = el.getElementsByTagName("Number")[0].getAttribute("sub_number");
+                if (subNumber !== NaN && subNumber !== null && subNumber !== 0 && subNumber !== "0")
+                {
+                    number = `${number}.${subNumber}`;
+                }
             } catch (err) { }
 
             let name = "";
@@ -103,40 +108,6 @@ $(document).ready(function() {
         $("#cueListName").html(mainTitle);
         $("#fileLoadArea").hide();
         $("#printArea").show();
-
-
-        
-
-        // var csvLines = fileData.split("\n");
-        
-        // if (!csvLines[0].includes(csvStartLine)) {
-        //     dropZone.text('Invalid REAPER csv file! Drag and drop CSV file from REAPER');
-        //     dropZone.addClass('error');
-        //     return;
-        // }
-
-        // var index = 0;
-        // csvLines.forEach(function(item) {
-        //     if (index === 0) {
-        //         index++;
-        //         return;
-        //     }
-        //     var itemData = item.split(",");
-        //     if (itemData[0][0] != "M") return;
-            
-        //     var timeParts = itemData[2].replace(/\r/g, "").split(":");
-        //     var firstTimePart = timeParts[0].length === 1 ? "0" + timeParts[0] : timeParts[0];
-        //     var time = `${firstTimePart}:${timeParts[1]}:${timeParts[2]}.${timeParts[3]}`;
-
-        //     cueList.push({name: decode_utf8(itemData[1]), time: time , frames: timecodeTimeToFrames(itemData[2], fps)});
-        // });
-
-        // cueList.sort((prev, next) => prev.frames - next.frames)
-        // cueList.forEach(function(cue, index){
-        //     $('#cueListTable tr:last').after(`<tr><td>${(index + 1)}</td><td>${cue.name}</td><td>${cue.time}</td></tr>`);
-        // });
-        // $("#settingArea").show();
-        // $("#fileLoadArea").hide();
 
     }
     

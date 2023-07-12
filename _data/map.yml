@@ -1,0 +1,95 @@
+- title: Санкт-Петербург
+  pos_x: -0.21512350242126307
+  pos_y: 0.35504259499545426
+  photo: spb
+
+- title: Адлер
+  pos_x: -0.574179993762346
+  pos_y: 0.068115234375
+  photo: adler
+
+- title: Гора Аибга
+  pos_x: -0.5712386120421377
+  pos_y: 0.07373046875
+  photo: aibga
+
+- title: Архангельск
+  pos_x: -0.2580246192785655
+  pos_y: 0.523681640625
+  photo: arhangelsk
+
+- title: Балтийск
+  pos_x: -0.13277925412788924
+  pos_y: 0.174560546875
+  photo: baltiysk
+
+- title: Балтийская коса
+  pos_x: -0.12936502018120188
+  pos_y: 0.1669921875
+  photo: baltyskaya
+
+- title: Чуприяновка
+  pos_x: -0.3256262247220667
+  pos_y: 0.321044921875
+  photo: chupriyanovka
+
+- title: Дубна
+  pos_x: -0.34858597439288264
+  pos_y: 0.32470703125
+  photo: dubna
+
+- title: Екатеринбург
+  pos_x: -0.583652558336579
+  pos_y: 0.55712890625
+  photo: ekb
+
+- title: Северный Ледовитый океан
+  pos_x: -0.13399958989518637
+  pos_y: 0.590576171875
+  photo: ice_ocean
+
+- title: Иваново
+  pos_x: -0.3807639232235347
+  pos_y: 0.36669921875
+  photo: ivanovo
+
+- title: Калининград
+  pos_x: -0.13962780424235482
+  pos_y: 0.17578125
+  photo: kaliningrad
+
+- title: Калязин
+  pos_x: -0.33467638752768303
+  pos_y: 0.328369140625
+  photo: kalyazin
+
+- title: остров Каменный (Канозеро)
+  pos_x: -0.1633378538630443
+  pos_y: 0.54052734375
+  photo: kanozero
+
+- title: Кашин
+  pos_x: -0.324424807876468
+  pos_y: 0.331298828125
+  photo: kashin
+
+- title: остров Кличен (Селигер)
+  pos_x: -0.2807345955062706
+  pos_y: 0.310546875
+  photo: klichen
+
+
+- title: Коломна
+  pos_x: -0.3820763433216874
+  pos_y: 0.306640625
+  photo: kolomna
+
+- title: Конаково
+  pos_x: -0.33716573395790905
+  pos_y: 0.3232421875
+  photo: konakovo
+
+- title: Куршская коса
+  pos_x: -0.14068181799137897
+  pos_y: 0.1884765625
+  photo: kurshskaya

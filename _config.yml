@@ -48,6 +48,11 @@ apps:
     icon: /static/dimfx.svg
     text: "grandMA2-плагин для создания диммерных эффектов для группы"
 
+  - name: "grandMA Fixture Finder"
+    url: https://mafixture.ru
+    icon: /static/fixturefind.svg
+    text: "Поиск библиотек для световых приборов в пультах grandMA"
+
 theme: minima
 plugins:
   - jekyll-feed
