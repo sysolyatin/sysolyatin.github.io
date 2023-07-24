@@ -53,6 +53,11 @@ apps:
     icon: /static/fixturefind.svg
     text: "Поиск библиотек для световых приборов в пультах grandMA"
 
+  - name: "Test Screen Generator"
+    url: /apps/screen-test
+    icon: /static/test-screen.png
+    text: "Генератор тестовых изображений для светодиодных экранов"
+
 theme: minima
 plugins:
   - jekyll-feed
