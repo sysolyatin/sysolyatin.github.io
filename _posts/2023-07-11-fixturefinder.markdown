@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Поиск библиотек приборов для grandMA"
+cover: "/static/notes/fixturefinder/cover.png"
 ---
 
 ### Предисловие

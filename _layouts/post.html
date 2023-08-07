@@ -12,18 +12,52 @@ layout: default
     	<br>
     	<hr>
     	<p class="text-secondary small">
-    		посмотрите <a href="/light/">другие заметки</a> или вернитесь на <a href="/">главную</a>
+    		посмотрите <a href="/">другие заметки</a> на главной,<br>
+			а ещё я делаю полезные <a href="/apps">приложения и плагины</a>
     	</p>
     	<!-- <a href="https://ma-learn.ru" target="_blank">
     		<img src="/static/ma-learn.png" width="100%">
     	</a> -->
 	</div>
 	<div class="col-md-3 text-secondary small" style="text-align: justify;">
+		<div id="otherPosts" class="mb-4"></div>
+
+		<h4>А ещё:</h4>
 		для написания каждой заметки про свет я трачу много сил и времени, а потом публикую 
 		весь материал на этом сайте в открытый доступ для всех желающих, поэтому, если заметка принесла вам пользу, и у вас есть финансовая возможность:<br>
 		<a href="https://pay.mysbertips.ru/73192616" target="_blank">
     		<img src="/static/sber.png" width="100%">
     	</a>
+
+		
 	</div>
-</div> 
+</div>
+
+<script defer>
+
+let currentPostUrl = "{{page.url}}";
+let otherPosts = [];
+
+fetch('/posts.json')
+	.then((response) => {
+		return response.json();
+	})
+	.then((posts) => {
+		while (otherPosts.length !== 4) {
+			let index = Math.floor(Math.random() * posts.length);
+			let randomPost = posts[index];
+			if (currentPostUrl === randomPost.url) continue;
+			if (otherPosts.find(a => a.url == randomPost.url)) continue;
+			otherPosts.push(randomPost);
+		}
+		let otherPostsHtmlData = "<h4>Вдруг пригодится:</h4>";
+		otherPosts.forEach(function(post) {
+			otherPostsHtmlData += `<a href="${post.url}"><img src="${post.cover}" alt="${post.title}" class="img-fluid rounded-3 border post-cover-img mb-3"></a>`
+		});
+
+		otherPostsHtmlData += `<br>&#10149; <a href="/" class="show-all-link">посмотреть все заметки</a>`;
+		document.getElementById("otherPosts").innerHTML = otherPostsHtmlData;
+		
+	});
+</script>
 

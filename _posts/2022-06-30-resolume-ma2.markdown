@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Управление медиасервером Resolume из grandMA2"
-popular: true
+cover: "/static/notes/resolume-ma2/cover.png"
 ---
 ### Вступление или ответ на вопрос «Это вообще что?»
 

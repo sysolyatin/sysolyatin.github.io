@@ -78,7 +78,6 @@
   pos_y: 0.310546875
   photo: klichen
 
-
 - title: Коломна
   pos_x: -0.3820763433216874
   pos_y: 0.306640625
@@ -93,3 +92,73 @@
   pos_x: -0.14068181799137897
   pos_y: 0.1884765625
   photo: kurshskaya
+
+- title: Кувшиново
+  pos_x: -0.2948696489799071
+  pos_y: 0.31396484375
+  photo: kuvshinovo
+
+- title: Лодейное поле
+  pos_x: -0.23726691088288704
+  pos_y: 0.385498046875
+  photo: lodeynoe
+
+- title: Москва
+  pos_x: -0.35835306882369417
+  pos_y: 0.310791015625
+  photo: msk
+
+- title: Мурманск
+  pos_x: -0.12965244778885804
+  pos_y: 0.577880859375
+  photo: murmansk
+
+- title: Нелидово
+  pos_x: -0.291965247935122
+  pos_y: 0.285400390625
+  photo: nelidovo
+
+- title: Великий Новгород
+  pos_x: -0.24461384458418184
+  pos_y: 0.328369140625
+  photo: novgorod
+
+- title: Одинцово
+  pos_x: -0.36006340017693805
+  pos_y: 0.29345703125
+  photo: odintsovo
+
+- title: Осташков
+  pos_x: -0.2819579925877584
+  pos_y: 0.31201171875
+  photo: ostashkov
+
+- title: Петрозаводск
+  pos_x: -0.23436250983810203
+  pos_y: 0.423583984375
+  photo: petrozavodsk
+
+- title: поселок Умба
+  pos_x: -0.17065778677317736
+  pos_y: 0.533447265625
+  photo: pos_umba
+
+- title: Приозерск
+  pos_x: -0.19116045626533704
+  pos_y: 0.38134765625
+  photo: priozersk
+
+- title: деревня Рауталахти
+  pos_x: -0.1916486150627694
+  pos_y: 0.39111328125
+  photo: rautalahti
+
+- title: поселок Роза Хутор
+  pos_x: -0.5732013495686964
+  pos_y: 0.0751953125
+  photo: rosahutor
+
+- title: гора Роза Пик
+  pos_x: -0.5741776671635611
+  pos_y: 0.076904296875
+  photo: rosapik

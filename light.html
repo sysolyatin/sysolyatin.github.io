@@ -5,16 +5,15 @@ title: Заметки про свет
 <div class="h-100 p-4 mb-3">
 	<h2 class="mb-4">{{ page.title }}</h2>
     <div class="row">
-        <div class="col-md-9">
-            <ul>
-                {% for post in site.posts %}
-                <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%d.%m.%Y" }})</li>
-                {% endfor %}
-            </ul>
-
-            <div class="text-secondary small">
-            	Если вдруг вы знаете, что такое RSS: можно подписаться на новые заметки по этой <a href="/feed.xml">ссылке</a>
-            </div>
+        {% for post in site.posts %}
+        <div class="col-md-4 p-2">
+            <a href="{{ post.url }}">
+                <img src="{{ post.cover }}" alt="{{ post.title }}" class="img-fluid rounded-3 border post-cover-img">
+            </a>
+        </div>
+        {% endfor %}
+        <div class="text-secondary small">
+            Если вдруг вы знаете, что такое RSS: можно подписаться на новые заметки по этой <a href="/feed.xml">ссылке</a>
         </div>
     </div>
 </div>

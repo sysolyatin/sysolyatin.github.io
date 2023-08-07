@@ -1,13 +1,9 @@
 title: Артем Сысолятин
-email: artem@sysolyatin.com
 description: художник по свету, видеоинженер
 permalink: /light/:title/
 navigation_links:
   - title: главная
     url: /
-
-  - title: заметки
-    url: /light
 
   - title: приложения
     url: /apps

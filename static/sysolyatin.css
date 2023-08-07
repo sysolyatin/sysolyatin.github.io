@@ -89,3 +89,13 @@ ul li::before {
 	color: #888;
 	margin-top: -25px;
 }
+
+.post-cover-img:hover {
+	transform: scale(1.03);
+}
+
+.show-all-link {
+	text-decoration: none;
+	font-size: 18px;
+	color: rgb(108,117,125);
+}
