@@ -99,3 +99,15 @@ ul li::before {
 	font-size: 18px;
 	color: rgb(108,117,125);
 }
+
+.task-list {
+	list-style-type: none;
+}
+.task-list-item::before {
+	content: "";
+	padding-right: 0;
+}
+.task-list-item-checkbox {
+	transform: scale(2);
+  	margin-right: 11px;
+}
